@@ -58,13 +58,18 @@ nav ul li a:hover > a:not(:hover){
 .home{
     display:flex;
 }
+@keyframes move {
+    0% { transform: translateX(0); }
+        50% { transform: translateX(-10px); } 
+        100% { transform: translateX(0); }% { transform: translateX(100vw); }
+  }
 .center {
     position:absolute;
     bottom:0;
     left:120;
     width:80%;
     pointer-events:none;
-
+    animation: move 5s linear infinite;
 }
 .coffeecup1 {
     position:absolute;
@@ -78,12 +83,17 @@ nav ul li a:hover > a:not(:hover){
     width:100%;
     pointer-events:none;
 }
+  @keyframes move1 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px ); }
+    100% { transform: translateY(0); }
+  }
 .Artboard1 {
     position:absolute;
     bottom:0;
-    left:5;
     width:60%;
     pointer-events:none;
+    animation: move1 8s linear infinite;
 }
 .Artboard2 {
     position:absolute;
@@ -91,6 +101,7 @@ nav ul li a:hover > a:not(:hover){
     right:0;
     width:70%;
     pointer-events:none;
+    animation: move1 8s linear infinite;
 }
 .Artboard3 {
     position:absolute;
